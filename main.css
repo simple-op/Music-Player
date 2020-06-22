@@ -1,0 +1,66 @@
+body{
+    margin:0px;
+    padding: 0px;
+    
+    }
+
+    /* container div  */
+#container{
+          margin-top: 50px;
+          margin-bottom: 40px ;
+
+          }
+
+    /* header section   */
+     header{
+            /* postion fixed scroll wont effect */
+            position: fixed;
+
+            background-color: red;
+            top: 0px;
+            width: 100%;
+
+            height: 50px;
+            border: solid;
+            }
+     /* Main section */
+
+      main{
+        display: flex;
+        border: solid;
+        flex-direction: row;
+        
+
+         
+           }
+           /* SONGS CONTAINER */
+           #songsContainer{
+                          background-color: aqua;
+                          width: 75%;
+
+                            }
+
+             /* aside section */
+             aside{
+
+                  background-color: antiquewhite;
+                   width: 25%;
+                   
+                   
+                   
+                   }
+
+         /* footer section */
+        
+        
+        
+        
+         footer{
+            border: solid;
+            position: fixed;
+            background-color:green;
+            
+            bottom: 0px;
+            width: 100%;
+            height: 40px;
+        }
