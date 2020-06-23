@@ -26,8 +26,10 @@ body{
             background-color: black;
             top: 0px;
             width: 100%;
-            border-radius: 50px;
+            /* border-radius: 50px; */
             height: 15%;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
             
              
             }
@@ -79,13 +81,28 @@ body{
         
         
          footer{
+            display: flex;
             color: aliceblue;
             position: fixed;
             background-color:black;
-            border-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            padding-top: 0px;
             bottom: 0px;
             width: 100%;
             height: 15%;
+            flex-direction: column;
             
-            
-        }
+                 }
+        /* progress bar at footer section */
+                 #progressbar{
+                             margin-top:-6px ;
+                             margin-left:-3px ;
+                              width: 100%;
+                              height: 10%;
+                              }
+                  #progressbar input{
+                              width: 100%;
+
+                              }
+
