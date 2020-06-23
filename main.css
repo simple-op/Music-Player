@@ -107,10 +107,10 @@ body{
                                
                               }
                    #player{
-                           
+                           margin-top: 6px;
                           display: flex;
                           flex-direction: row;
-                          justify-content: center;
+                          /* justify-content: center; */
                           justify-content:space-between;
                           
 
@@ -136,10 +136,10 @@ body{
                                 }            
                     #buttons img{
                            display: inline-block;
-                           height: 15%;
+                           height: 11%;
                            }  
                      #buttons img:hover{
-                       height: 16%;
+                       height: 13%;
                      } 
                            
                            
