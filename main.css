@@ -116,8 +116,26 @@ body{
 
                           }
                      #playingSong{
+                         display: flex;
+                         flex-direction: row;
+                         justify-content:space-evenly;
+                         padding: 10px;
                            width: 33%;
                            }
+                        #playingSong div img{
+                          
+                          height: 50px;
+                        }
+
+                        #playingSong div img:hover{
+                          transition: all 1s;
+                          box-shadow: 5px 5px whitesmoke;
+                        }
+                        #playingSong div{
+                          width:auto;
+                          padding-t: 10px;
+                          text-align: left;
+                        }  
 
 
                     #buttons{
@@ -136,10 +154,10 @@ body{
                                 }            
                     #buttons img{
                            display: inline-block;
-                           height: 11%;
+                           height: 33px;
                            }  
                      #buttons img:hover{
-                       height: 13%;
+                       height: 35px;
                      } 
                            
                            
