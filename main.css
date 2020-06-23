@@ -30,6 +30,8 @@ body{
         display: flex;
         border: solid;
         flex-direction: row;
+        height: 81vh;
+        overflow: auto;
         
 
          
@@ -38,18 +40,25 @@ body{
            #songsContainer{
                           background-color: aqua;
                           width: 75%;
-
+                          padding: 20px;
+                          overflow-y: scroll;
                             }
+
+          
 
              /* aside section */
              aside{
 
                   background-color: antiquewhite;
                    width: 25%;
-                   
+                   padding: 20px;
+                   overflow-y: scroll;
                    
                    
                    }
+
+
+                   
 
          /* footer section */
         
