@@ -5,7 +5,7 @@ body{
      overflow: hidden; 
      background-color: orange;
     
-    animation: changeShape 10s ease-in-out infinite alternate ;
+    animation: changeShape 5s ease-in-out infinite alternate ;
 
 }
 @keyframes changeShape{
@@ -92,6 +92,11 @@ body{
     /* header section   */
      header{
             /* postion fixed scroll wont effect */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
             position: fixed;
             color: white;
             background-color: black;
@@ -197,6 +202,7 @@ body{
                         #playingSong div img{
                           
                           height: 50px;
+                          
                         }
 
                         #playingSong div img:hover{
@@ -205,7 +211,7 @@ body{
                         }
                         #playingSong div{
                           width:auto;
-                          padding-t: 10px;
+                          /* padding-top: 5px; */
                           text-align: left;
                         }  
 
