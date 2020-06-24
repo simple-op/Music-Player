@@ -207,11 +207,11 @@ body{
 
                         #playingSong div img:hover{
                           transition: all 1s;
-                          box-shadow: 5px 5px whitesmoke;
+                          box-shadow:0 0 10px 2px whitesmoke;
                         }
                         #playingSong div{
                           width:auto;
-                          /* padding-top: 5px; */
+                          padding-top: 10px;
                           text-align: left;
                         }  
 
@@ -235,7 +235,9 @@ body{
                            height: 33px;
                            }  
                      #buttons img:hover{
-                       height: 35px;
+                       /* height: 35px; */
+                       border-radius: 50%;
+                       box-shadow: 0 0 10px 2px;
                      } 
                            
                            
