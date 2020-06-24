@@ -3,32 +3,32 @@ body{
     padding: 0px;
     cursor:url(Assets/Translucent\ White.cur),auto;
      overflow: hidden; 
-     background-color: orange;
+     background-color: dodgerblue;
     
-    animation: changeShape 5s ease-in-out infinite alternate ;
+    animation: changeShape 5s linear infinite  ;
 
 }
 @keyframes changeShape{
 0%{
-     background-color: red;        /* top:50px; */
+     background-color:white;        /* top:50px; */
     }
     10%{
-      background-color: yellow;
+      background-color: dodgerblue;
     }
     20%{
-      background-color: green; 
+      background-color: black; 
     }
     40%{
-      background-color: pink; 
+      background-color: white; 
     }
     60%{
-      background-color: blue; 
+      background-color: dodgerblue; 
     }
     80%{
-      background-color: skyblue; 
+      background-color: black; 
     }
     100%{
-      background-color:magenta; 
+      background-color:white; 
     }
     
   }
@@ -66,7 +66,16 @@ body{
           
         }
       }
-  
+      @keyframes rotation{
+100%{
+            transform: rotate(360deg);/* top:50px; */
+            }
+                     
+            
+            
+          }
+        
+    
 
 
 
@@ -118,15 +127,27 @@ body{
 
               width: 30vw;
             }
+              
+
+
             
-
-
-
             header #logo{
               float: left;
                 text-align: left;
                         }
+            head #logo div img{
+              /* animation: rotation 2s infinite linear ; animation: rotation 2s infinite linear ; */
+            }            
+            header #logo div{
+              animation: rotation 2s infinite linear ;
+              width: 50px;
+              height: 50px;
+              border:solid;
+              border-color: dodgerblue;
+              margin-left:-50px;
+              border-radius: 50%;
 
+            }
 
 
 
@@ -134,7 +155,9 @@ body{
               width: 25vw;
               border-bottom: solid;
               border-width: 0.5px;
+              padding: 5px;
               border-radius: 20px;
+              border-color: grey;
               
 
               
