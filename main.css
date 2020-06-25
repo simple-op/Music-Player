@@ -77,8 +77,41 @@ body{
             
           }
         
+          @keyframes changeb{
+            0%{
+              BOX-SHADOW: 0 0 10PX 4PX mediumseagreen;    /* top:50px; */
+                }
+                33%{
+                  BOX-SHADOW: 0 0 10PX 4PX red;
+                }
+                66%{
+                  BOX-SHADOW: 0 0 10PX 4PX rgb(236, 35, 193);
+                }
+                100%{
+                  BOX-SHADOW: 0 0 10PX 4PX DODGERBLUE;
+                
+                
+              }
+            }
     
-
+            @keyframes changev{
+              
+              0%{
+                BOX-SHADOW:  2px 1PX 0PX white;    /* top:50px; */
+                  }
+                  33%{
+                    BOX-SHADOW: 4px 0 4PX 0PX white;
+                  }
+                  66%{
+                    BOX-SHADOW: 6px 0 6PX 0PX white;
+                  }
+                  100%{
+                    BOX-SHADOW: 8px 0 8PX 0PX white;
+                    ;
+                  
+                  
+                }
+              }
 
 
 
@@ -399,6 +432,13 @@ body{
                      #timer img:hover{
                        height: 32px;
                      }
+                     
+                     #speaker{
+                       border-radius: 50%;
+                      animation: changev 0.5s linear infinite alternate ;
+                      box-shadow: 0 0 10px 1px white;
+                    
+                                }
 
                      #speaker:hover ~ #slider{
                       width: 80px;
