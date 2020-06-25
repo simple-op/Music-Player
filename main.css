@@ -343,6 +343,7 @@ body{
                         #playingSong div img{
                           border-radius: 50%;
                           height: 50px;
+                          box-shadow: 0 0 5px 1px;
                           
                         }
 
@@ -374,6 +375,7 @@ body{
                     #buttons img{
                            display: inline-block;
                            height: 33px;
+                           border-radius: 50%;
                            }  
                      #buttons img:hover{
                        /* height: 35px; */
