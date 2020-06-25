@@ -197,7 +197,7 @@ body{
         width: 100%;
         height: auto;
         flex-direction: row;
-        
+        box-shadow: 0 0 10px 3px;
         overflow:hidden;
          
 
