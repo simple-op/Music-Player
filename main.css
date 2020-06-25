@@ -4,7 +4,7 @@ body{
     cursor:url(Assets/Translucent\ White.cur),auto;
      overflow: hidden; 
      /* background-color: black; */
-     background-image: url(/wp3482595.jpg);
+     background-image: url(wp3482595.jpg);
      background-size: cover;
     
     /* animation: changeShape 5s linear infinite  ; */
@@ -402,7 +402,7 @@ body{
 
                      #speaker:hover ~ #slider{
                       width: 80px;
-                      right: 32px;
+                      right:3%;
                       height: 1px;
                       bottom: 100px;
                       position: fixed;
