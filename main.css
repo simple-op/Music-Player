@@ -3,9 +3,11 @@ body{
     padding: 0px;
     cursor:url(Assets/Translucent\ White.cur),auto;
      overflow: hidden; 
-     background-color: dodgerblue;
+     /* background-color: black; */
+     background-image: url(/wp3482595.jpg);
+     background-size: cover;
     
-    animation: changeShape 5s linear infinite  ;
+    /* animation: changeShape 5s linear infinite  ; */
 
 }
 @keyframes changeShape{
@@ -139,7 +141,7 @@ body{
               /* animation: rotation 2s infinite linear ; animation: rotation 2s infinite linear ; */
             }            
             header #logo div{
-              animation: rotation 5s infinite linear ;
+              animation: rotation 3s infinite linear ;
               width: 45px;
               height: 45px;
               /* border:solid; */
@@ -205,7 +207,7 @@ body{
            }
            /* SONGS CONTAINER */
            #songsContainer{
-                          background-color: black;
+                          background-color: transparent;
                           width:80%;
                           padding: 20px;
                           overflow-y: scroll;
@@ -217,8 +219,8 @@ body{
              /* aside section */
              aside{
 
-                  /* background-color: orange; */
-                  background-image: url(ver.jpg);
+                  background-color: transparent;
+                  /* background-image: url(ver.jpg); */
                   background-repeat: no-repeat;
                   background-size: cover;
                    width: 20%;
@@ -241,15 +243,23 @@ body{
                      background-color: black;
                      color: white;
                      margin: 10px;
-                     /* border-radius: 10px; */
-                     transition: ease 1s all;
+                     border-radius: 20px;
                      font-style: italic;
                      font-weight: bold;
                      padding: 5px;
-                     box-shadow: 0 0 10px 4px black;
+                     padding-left: 10px;
+                     padding-top: 7px;
+                     box-shadow: 0 0 5px 0px dodgerblue;
                      
                      
                    }
+                   aside li:hover{
+
+                    box-shadow: 0 0 10px 2px dodgerblue;
+                    transition: ease 1.33s all;
+
+                   }
+
                     
                    aside li #songimagelist{
                          height: 25px; 
@@ -268,8 +278,13 @@ body{
 
                    aside li #playbuttonlist img{
                     height: 15px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 5px 1px white;
             }
-                   
+            aside li #playbuttonlist img:hover{
+                      
+              box-shadow: 0 0 10px 2px white;
+                  }
 
 
 
@@ -285,7 +300,7 @@ body{
             display: flex;
             color: aliceblue;
             position: fixed;
-            background-color:black;
+            background-color:transparent;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
             padding-top: 0px;
@@ -321,11 +336,12 @@ body{
                          display: flex;
                          flex-direction: row;
                          justify-content:space-evenly;
-                         padding: 10px;
+                         padding: 2px;
+                         
                            width: 33%;
                            }
                         #playingSong div img{
-                          
+                          border-radius: 50%;
                           height: 50px;
                           
                         }
@@ -384,13 +400,13 @@ body{
 
                      #speaker:hover ~ #slider{
                       width: 80px;
-                      right: 20px;
-                      
+                      right: 32px;
+                      height: 1px;
                       bottom: 100px;
                       position: fixed;
-                     
+                      box-shadow: 0 0 10px 1px white;
                       
                        
-                       transition:2s all;
+                       transition:1s all;
                        
                      }
