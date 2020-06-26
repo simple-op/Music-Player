@@ -246,14 +246,27 @@ body{
                           overflow-y: scroll;
                           color: rgb(185, 211, 211);
                             }
+
+                          #carousel {
+                            display: flex;
+                            flex-direction: row;
+                            height: 40vh;
+                            align-items: center;
+                            justify-content: center;
+
+
+                          }
+
+
                           #carousel div{
 
-                                      position: absolute;
+                                      /* position: absolute; */
                                       box-shadow: 0 0 5px 2px dodgerblue ;
                                       /* height: 20vh; */
-                                      width: 33vw;
+                                      /* width: 33vw; */
                                       /* border-radius: 25px; */
                                       background-color: black;
+                                      /* flex-grow: 12; */
                                       /* filter: grayscale(100%); */
                                         
 
@@ -266,6 +279,8 @@ body{
 
 
                                         #first{
+                                          width: 20vw;
+                                          order: 1;
                                           top: 8vh;
                                           height: 20vh;
                                           background-image: url(https://i.ytimg.com/vi/K55Ow7mCoho/maxresdefault.jpg);
@@ -274,14 +289,17 @@ body{
                                         
                                         #middle{
                                           
-                                          top:6vh;
-                                          left: 20vw;
+                                          z-index: 1;
+                                          order: 2;
                                           height: 24vh;
+                                          width: 33vw;
                                           background-image: url(https://i.ytimg.com/vi/c8YIlU_30Kk/maxresdefault.jpg);
                                           background-size:cover ;
                                           background-color: black;
                                         }
                                         #third{
+                                          width:20vw;
+                                          order: 3;
                                             background-image: url(https://i.ytimg.com/vi/TduHf1tWDvI/maxresdefault.jpg);
                                             background-size:cover;
                                             height: 20vh;
@@ -300,12 +318,16 @@ body{
                                         } */
                                       
                                         #third:hover{
+                                          
                                           /* background-color: black; */
                                           filter: none;
                                           z-index: 1;
                                           /* height: 30vh; */
+                                          /* position: absolute; */
                                           height: 30vh;
-                                          top:2vh;
+                                          width: 40vw;
+                                          /* left: 50vh; */
+                                          /* top:2vh; */
                                           box-shadow: 0 0 20px 4px dodgerblue ;
                                           transition: linear 0.1s all;
 
@@ -315,8 +337,10 @@ body{
 
                                           /* background-color: black; */
                                           /* height: 30vh; */
+                                          /* position: absolute; */
                                           z-index: 1;
                                           height: 30vh;
+                                          width: 40vw;
                                           top:2vh;
                                           box-shadow: 0 0 20px 4px dodgerblue ;
                                           transition: all linear 0.1s ;
@@ -326,6 +350,7 @@ body{
                                           filter: none;
                                           /* background-color: black; */
                                           height: 30vh;
+                                          width: 40vw;
                                           top: 2vh;
                                           z-index: 1;
                                           box-shadow: 0 0 20px 4px dodgerblue ;
@@ -360,8 +385,26 @@ body{
                                           transition: all linear 0.1s ;
 
                                         }
+                              #artist{
+                                z-index: -4;
+                                display: flex;
+                                flex-direction:row;
+                                justify-content: space-evenly;
+                                flex-wrap: wrap;
+                                /* position: relative; */
+                                /* top: 50vh; */
+                              }
 
+                              #artist div{
+                                margin: 25px;
 
+                                /* display: inline-block; */
+                                height: 70px;
+                                width: 70px;
+                                /* background-color: aqua; */
+                                border-radius: 50%;
+                                box-shadow:0 0 10px 3px aliceblue;
+                              }          
 
 
 
