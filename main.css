@@ -246,9 +246,87 @@ body{
                           overflow-y: scroll;
                           color: rgb(185, 211, 211);
                             }
+                          #carousel div{
 
-          
+                                      position: absolute;
+                                      box-shadow: 0 0 5px 2px dodgerblue ;
+                                      /* height: 20vh; */
+                                      width: 33vw;
+                                      /* border-radius: 25px; */
+                                      background-color: black;
+                                        
 
+                                        } 
+                                        #first{
+                                          top: 8vh;
+                                          height: 20vh;
+                                        }
+                                        
+                                        #middle{
+                                          top:6vh;
+                                          left: 20vw;
+                                          height: 24vh;
+                                             
+                                          background-color: black;
+                                        }
+                                        #third{
+                                            
+                                          height: 20vh;
+                                             top: 8vh;
+                                            left: 40vw;
+                                            background-color: black;
+
+                                        }
+
+                                        /* #first:target{
+
+                                          top:-2vh;
+                                          left: 20vw;
+                                          transition: linear 2s all;
+
+                                        } */
+                                      
+                                        #third:hover{
+                                          /* background-color: black; */
+                                          z-index: 1;
+                                          /* height: 30vh; */
+                                          height: 28vh;
+                                          top:2vh;
+                                          box-shadow: 0 0 20px 4px dodgerblue ;
+                                          transition: linear 0.3s all;
+
+                                        }
+                                        #first:hover{
+                                         
+
+                                          /* background-color: black; */
+                                          /* height: 30vh; */
+                                          z-index: 1;
+                                          height: 28vh;
+                                          top:2vh;
+                                          box-shadow: 0 0 20px 4px dodgerblue ;
+                                          transition: all ease-in-out 0.3s ;
+
+                                        }
+                                        #middle:hover{
+                                          /* background-color: black; */
+                                          height: 28vh;
+                                          top: 2vh;
+                                          z-index: 1;
+                                          box-shadow: 0 0 20px 4px dodgerblue ;
+                                          transition: linear 0.3s all;
+
+                                          
+                                        }
+
+
+
+
+
+
+
+
+            
              /* aside section */
              aside{
 
