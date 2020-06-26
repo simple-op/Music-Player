@@ -254,24 +254,37 @@ body{
                                       width: 33vw;
                                       /* border-radius: 25px; */
                                       background-color: black;
+                                      /* filter: grayscale(100%); */
                                         
 
                                         } 
+                                       .gray{
+                                         filter: grayscale(100);
+                                       }
+
+
+
+
                                         #first{
                                           top: 8vh;
                                           height: 20vh;
+                                          background-image: url(https://i.ytimg.com/vi/K55Ow7mCoho/maxresdefault.jpg);
+                                          background-size: cover;
                                         }
                                         
                                         #middle{
+                                          
                                           top:6vh;
                                           left: 20vw;
                                           height: 24vh;
-                                             
+                                          background-image: url(https://i.ytimg.com/vi/c8YIlU_30Kk/maxresdefault.jpg);
+                                          background-size:cover ;
                                           background-color: black;
                                         }
                                         #third{
-                                            
-                                          height: 20vh;
+                                            background-image: url(https://i.ytimg.com/vi/TduHf1tWDvI/maxresdefault.jpg);
+                                            background-size:cover;
+                                            height: 20vh;
                                              top: 8vh;
                                             left: 40vw;
                                             background-color: black;
@@ -288,37 +301,65 @@ body{
                                       
                                         #third:hover{
                                           /* background-color: black; */
+                                          filter: none;
                                           z-index: 1;
                                           /* height: 30vh; */
-                                          height: 28vh;
+                                          height: 30vh;
                                           top:2vh;
                                           box-shadow: 0 0 20px 4px dodgerblue ;
-                                          transition: linear 0.3s all;
+                                          transition: linear 0.1s all;
 
                                         }
                                         #first:hover{
-                                         
+                                          filter: none;
 
                                           /* background-color: black; */
                                           /* height: 30vh; */
                                           z-index: 1;
-                                          height: 28vh;
+                                          height: 30vh;
                                           top:2vh;
                                           box-shadow: 0 0 20px 4px dodgerblue ;
-                                          transition: all ease-in-out 0.3s ;
+                                          transition: all linear 0.1s ;
 
                                         }
                                         #middle:hover{
+                                          filter: none;
                                           /* background-color: black; */
-                                          height: 28vh;
+                                          height: 30vh;
                                           top: 2vh;
                                           z-index: 1;
                                           box-shadow: 0 0 20px 4px dodgerblue ;
-                                          transition: linear 0.3s all;
+                                          transition: linear 0.1s all;
 
                                           
                                         }
 
+                                        #third:hover ~ #middle{
+                                          filter: grayscale(100%);
+
+                                          /* background-color: black; */
+                                          /* height: 30vh; */
+                                          z-index:0;
+                                          /* height: 20vh; */
+                                          /* top:vh; */
+                                          box-shadow: 0 0 20px 4px dodgerblue ;
+                                          transition: all linear 0.1s ;
+
+                                        }
+
+                                         
+                                        #first:hover ~ #middle{
+                                          filter: grayscale(100%);
+
+                                          /* background-color: black; */
+                                          /* height: 30vh; */
+                                          z-index:0;
+                                          /* height: 20vh; */
+                                          /* top:vh; */
+                                          box-shadow: 0 0 20px 4px dodgerblue ;
+                                          transition: all linear 0.1s ;
+
+                                        }
 
 
 
