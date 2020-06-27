@@ -397,7 +397,7 @@ body{
                                 background-color: black;
                                 display: flex;
                                 flex-direction:row;
-                                justify-content: space-evenly;
+                                justify-content: space-between;
                                 flex-wrap: wrap;
                                 /* position: relative; */
                                 /* top: 50vh; */
@@ -409,8 +409,8 @@ body{
                                 background-size: cover;
  
                                 /* display: inline-block; */
-                                height: 70px;
-                                width: 70px;
+                                height: 90px;
+                                width: 90px;
                                 /* background-color: aqua; */
                                 border-radius: 50%;
                                 box-shadow:0 0 10px 3px aliceblue;
