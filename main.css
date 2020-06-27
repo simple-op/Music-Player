@@ -228,16 +228,23 @@ body{
         display: flex;
         position: fixed;
         top: 15%;
-        bottom: 15%;
+        bottom:0%;
         width: 100%;
         height: auto;
         flex-direction: row;
+        /* padding-bottom: 15%; */
         box-shadow: 0 0 10px 3px;
         overflow:hidden;
          
 
          
            }
+
+
+       main:hover{
+         /* bottom: 15%; */
+         /*  */
+       }    
            /* SONGS CONTAINER */
            #songsContainer{
                           background-color: transparent;
@@ -283,7 +290,7 @@ body{
                                           order: 1;
                                           top: 8vh;
                                           height: 20vh;
-                                          background-image: url(https://i.ytimg.com/vi/K55Ow7mCoho/maxresdefault.jpg);
+                                          background-image: url(https://img.freepik.com/free-vector/music-event-poster-template-with-colorful-shapes_1361-1591.jpg?size=626&ext=jpg);
                                           background-size: cover;
                                         }
                                         
@@ -293,14 +300,14 @@ body{
                                           order: 2;
                                           height: 24vh;
                                           width: 33vw;
-                                          background-image: url(https://i.ytimg.com/vi/c8YIlU_30Kk/maxresdefault.jpg);
+                                          background-image: url(https://img.freepik.com/free-psd/sound-party-cover-template_23-2148131762.jpg?size=626&ext=jpg&uid=A&ga=GA1.2.2008229555.1593257662);
                                           background-size:cover ;
                                           background-color: black;
                                         }
                                         #third{
                                           width:20vw;
                                           order: 3;
-                                            background-image: url(https://i.ytimg.com/vi/TduHf1tWDvI/maxresdefault.jpg);
+                                            background-image: url(https://image.freepik.com/free-photo/red-electric-guitar-wooden-floor_1150-19456.jpg);
                                             background-size:cover;
                                             height: 20vh;
                                              top: 8vh;
@@ -328,7 +335,7 @@ body{
                                           width: 40vw;
                                           /* left: 50vh; */
                                           /* top:2vh; */
-                                          box-shadow: 0 0 20px 4px dodgerblue ;
+                                          box-shadow: 0 0 20px 4px red ;
                                           transition: linear 0.1s all;
 
                                         }
@@ -342,7 +349,7 @@ body{
                                           height: 30vh;
                                           width: 40vw;
                                           top:2vh;
-                                          box-shadow: 0 0 20px 4px dodgerblue ;
+                                          box-shadow: 0 0 20px 4px darkmagenta ;
                                           transition: all linear 0.1s ;
 
                                         }
@@ -397,6 +404,8 @@ body{
 
                               #artist div{
                                 margin: 25px;
+                                background-image: url(meri.jpg);
+                                background-size: cover;
 
                                 /* display: inline-block; */
                                 height: 70px;
@@ -404,8 +413,76 @@ body{
                                 /* background-color: aqua; */
                                 border-radius: 50%;
                                 box-shadow:0 0 10px 3px aliceblue;
-                              }          
+                              }  
+                              
+                              #latest{
+                                display: flex;
+                                flex-direction:row;
+                                justify-content: space-evenly;
+                                flex-wrap: wrap;
 
+
+                              }
+                              
+                              #footer:target{
+                                /* bottom: 15%; */
+                                background-color: dodgerblue;
+                                background-image: url(web-header.png);
+                                background-size: cover;
+                                display: flex;
+                                transition: linear 1s;
+                              }
+
+
+
+                              #latest div{
+
+                                margin: 25px;
+                                background-image: url(logoc.png);
+                                background-size: cover;
+
+                                /* display: inline-block; */
+                                height: 70px;
+                                width: 70px;
+                                /* background-color: aqua; */
+                                border-radius: 50%;
+                                box-shadow:0 0 10px 3px aliceblue;                                
+
+                                 
+
+                              }
+
+
+
+
+
+
+
+
+
+                              #hindi{
+
+                                display: flex;
+                                flex-direction:row;
+                                justify-content: space-evenly;
+                                flex-wrap: wrap;
+
+                              }
+                              
+
+                              #hindi div{
+
+                                margin: 25px;
+                                background-image: url(/logoc.png);
+                                background-size: cover;
+
+                                /* display: inline-block; */
+                                height: 70px;
+                                width: 70px;
+                                /* background-color: aqua; */
+                                border-radius: 50%;
+                                box-shadow:0 0 10px 3px aliceblue;                                
+                              }
 
 
 
@@ -492,7 +569,7 @@ body{
         
         
          footer{
-            display: flex;
+            display: none;
             color: aliceblue;
             position: fixed;
             background-color:transparent;
