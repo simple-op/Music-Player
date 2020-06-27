@@ -475,11 +475,14 @@ body{
                                 /* left: 20vh; */
                                 float:right;
                                 padding: 0;
+                                transition: all 1s;
+
                               }
 
 
                               #latest span:hover ~ #option{
                                 display: flex;
+                                transition: all 1s;
                               
 
                               }
@@ -779,14 +782,29 @@ body{
                                 }
 
                      #speaker:hover ~ #slider{
-                      width: 80px;
-                      right:3%;
-                      height: 1px;
-                      bottom: 100px;
-                      position: fixed;
+                      width: 100px;
+                      right:2.5%;
+                      height: 2px;
+                      bottom: 19vh;
+                      position: relative;
                       box-shadow: 0 0 10px 1px white;
                       
                        
                        transition:1s all;
                        
+                     }
+                     #slider:hover{
+                      width: 100px;
+                      /* right:3%; */
+                      right:2.5%;
+                      
+                      height: 2px;
+                      bottom: 19vh;
+                      position: relative;;
+                      box-shadow: 0 0 10px 1px white;
+                      
+                       
+                       transition:1s all;
+
+
                      }
