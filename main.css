@@ -393,7 +393,8 @@ body{
 
                                         }
                               #artist{
-                                z-index: -4;
+                                margin-top: 40px;
+                                background-color: black;
                                 display: flex;
                                 flex-direction:row;
                                 justify-content: space-evenly;
@@ -406,7 +407,7 @@ body{
                                 margin: 25px;
                                 background-image: url(meri.jpg);
                                 background-size: cover;
-
+ 
                                 /* display: inline-block; */
                                 height: 70px;
                                 width: 70px;
@@ -420,6 +421,8 @@ body{
                                 flex-direction:row;
                                 justify-content: space-evenly;
                                 flex-wrap: wrap;
+                                background-color: black;
+
 
 
                               }
@@ -437,22 +440,88 @@ body{
 
                               #latest div{
 
-                                margin: 25px;
-                                background-image: url(logoc.png);
+                                 
+                                margin: 24px;
+                                /* background-image: url(/114275907.jpg); */
                                 background-size: cover;
 
                                 /* display: inline-block; */
-                                height: 70px;
-                                width: 70px;
+                                background-color: b;
+                                height:12vh;
+                                width: 25vw;
                                 /* background-color: aqua; */
-                                border-radius: 50%;
+                                /* border-radius: 50%; */
                                 box-shadow:0 0 10px 3px aliceblue;                                
 
                                  
 
                               }
 
+                              #latest div img{
+                                height: 12vh;
+                              } 
+                              #option{
+                                border: none;
+                                box-shadow: none;
+                                /* height: 100px; */
+                                /* width: 80px */
+                                border: solid;
+                                /* background-color: black; */
+                                display: none;
+                                flex-direction: column;
+                                width: 10vw;
+                                position: relative;
+                                /* top:-13vh; */
+                                /* left: 20vh; */
+                                float:right;
+                                padding: 0;
+                              }
 
+
+                              #latest span:hover ~ #option{
+                                display: flex;
+                              
+
+                              }
+                              #option:hover{
+
+                                display: flex;
+                                
+                                
+                              }
+
+
+                              #latest span{
+                                float:right;
+                              }
+                              #latest ul{
+                                list-style: none;
+                                border: 0in;
+                                /* margin-left: -20px; */
+                                /* width: 100%; */
+                                
+
+                              }
+                              #latest li button{
+                                width: 100%;
+                                background-color: white;
+                                border-width: 0.2px;
+                                outline: none;
+                                margin: 2px;
+                                background-color: black;
+                                color: white;
+                                padding: 3px;
+                                border-radius: 10px;
+                                box-shadow: 0 0 2px 1px white;
+
+                              }
+                              #latest li button:hover{
+                                box-shadow: 0 0 10px 1px white;
+                                  
+                              }
+
+
+                              
 
 
 
@@ -461,7 +530,9 @@ body{
 
 
                               #hindi{
+                                margin-top: 40px;
 
+                                background-color: black;                                 
                                 display: flex;
                                 flex-direction:row;
                                 justify-content: space-evenly;
@@ -654,7 +725,35 @@ body{
                        border-radius: 50%;
                        box-shadow: 0 0 10px 2px;
                      } 
-                           
+                      
+                     #play
+                     {
+                        outline: none;
+                        border-radius: 50%;
+                        background-image: url(Assets/play.png);
+                        height: 33px;
+                        background-size: cover;
+                        width: 33px;
+                        background-color: transparent;
+                        border: none;
+                        box-shadow: 0 0 5px 1px white;
+                        animation: change 1s ease-in-out infinite alternate ;
+                     }
+                     #play:focus{
+
+                      background-image: url(circle-cropped\ \(6\).png);
+
+                     }
+                     #play:hover{
+
+                      box-shadow: 0 0 10px 1px white;
+                      
+
+                     }
+
+
+                      
+
                            
                      #timer{
                         height: 100%;
