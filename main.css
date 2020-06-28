@@ -878,7 +878,13 @@ body{
                     
                                 }
 
+                     #slider{
+                         
+                      display: none;
+                     }           
+
                      #speaker:hover ~ #slider{
+                      display: inline-block;
                       width: 100px;
                       right:2.5%;
                       height: 2px;
@@ -891,6 +897,8 @@ body{
                        
                      }
                      #slider:hover{
+                      display: inline-block;
+
                       width: 100px;
                       /* right:3%; */
                       right:2.5%;
