@@ -117,7 +117,34 @@ body{
               }
 
 
+              @keyframes changes{
+                0%{
+                transform: scale(0);  
+                /* transform: rotate(90);  top:50px; */
+                    }
+                    33%{
+                /* transform: scale(0.33);   top:50px; */
+                transform: rotate(180deg);  /* top:50px; */
 
+                      
+                    }
+                    66%{
+                      transform: scale(0.66);   /* top:50px; */
+                      /* transform: rotate(270deg);  top:50px; */
+                
+                      
+                    }
+                    100%{
+                /* transform: scale(1);   top:50px; */
+                transform: rotate(360deg);  
+
+                      
+                
+                      
+                    
+                    
+                  }
+                }
 
 
 
@@ -944,6 +971,7 @@ body{
                      #playlist
                      /* firstly its display property is none  */
                      {
+                       /* transform: scale(0); */
                        display: none;
                        flex-direction: row;
                        /* justify-content: space-evenly; */
@@ -972,6 +1000,8 @@ body{
                     }
                     /* list containing songs for the artist only */
                     #list{
+                      /* transform: scale(0); */
+                      
                       contain: content;
 
                       display: none;
@@ -1047,12 +1077,19 @@ body{
 
                     
                     #playlist:target ~#list{
-
+                      /* transform: scale(1); */
+                      animation: changes 1s linear 1 alternate ;
+                      /* transition: all 1s; */
                       display: flex;
+                      
                     }
                      
 
                     #playlist:target{
+                      animation: changes 1s linear 1 alternate ;
+                      /* transform: scale(1); */
+                      /* transition:transform 1s; */
+
 
                       display: flex;
                     }
