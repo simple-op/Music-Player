@@ -93,6 +93,26 @@ body{
                 
               }
             }
+            @keyframes changec{
+              0%{
+              font-size: small;    /* top:50px; */
+                  }
+                  33%{
+              font-size:large;    /* top:50px; */
+                    
+                  }
+                  66%{
+              font-size: x-large;    /* top:50px; */
+                    
+                  }
+                  100%{
+                    text-shadow:  0px 7PX 10PX DODGERBLUE;
+              font-size: xx-large;    /* top:50px; */
+                    
+                  
+                  
+                }
+              }
     
             @keyframes changev{
               
@@ -167,6 +187,8 @@ body{
 
             
             header #logo{
+              display: flex;
+              flex-direction: row;
               float: left;
                 text-align: left;
                         }
@@ -674,6 +696,7 @@ body{
                    aside ul{
 
                     margin-left: -40px;
+                    list-style: none;
                     
                    }
                    
@@ -683,6 +706,7 @@ body{
                      background-color: black;
                      color: white;
                      margin: 10px;
+                     width: 80%;
                      border-radius: 20px;
                      font-style: italic;
                      font-weight: bold;
@@ -913,3 +937,113 @@ body{
 
 
                      }
+                     #playlist{
+                       display: none;
+                       flex-direction: row;
+                       /* justify-content: space-evenly; */
+                       /* align-content: space-between; */
+                       /* padding: 10px; */
+                       width: 100%;
+                       height: 40vh;
+                       background-color: black;
+                       box-shadow: 0 0 10px 4px white;
+
+                     }
+                     #playlist #artistPhoto{
+                       width: 100vw;
+
+                     }
+
+                     
+                     
+                     #playlist:target ~section{
+                       transform: scale(0);
+                       display: none;
+                       transform: none;
+                           
+                    
+                    }
+                    #list{
+                      contain: content;
+
+                      display: none;
+                      padding: 20px;
+                    
+                      width: 100%;
+                      
+
+                    }
+                    #list ul{
+                      padding-inline-start: 0cm;
+                      
+                      list-style: none;
+                      width: 95%;
+                    }
+                    #list li{
+                      padding: 10px;
+                    }
+                    
+                   #list li{
+                    background-color: black;
+                    color: white;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    width: 100%;
+                    border-radius: 0px;
+                    font-style: italic;
+                    font-weight: bold;
+                    padding: 5px;
+                    /* margin: 15px; */
+                    padding-left: 10px;
+                    padding-top: 7px;
+                    box-shadow: 0 0 5px 0px purple;
+                    
+                    
+                  }
+                  #list li:hover{
+
+                   box-shadow: 0 0 10px 2px dodgerblue;
+                   transition: ease 1.33s all;
+
+                  }
+
+                   
+                  #list li #songimagelist{
+                        height: 25px; 
+                        width: 25px;
+                        border-radius: 50%;
+                        box-shadow: 0 0 4px 1px  purple;
+                        
+                  }
+                  #list li #songnamelist{
+                                                  
+                   margin-bottom: 7px;
+                   margin-top: 7px;
+                  }
+                  #list li #playbuttonlist{
+                          float: right;
+                          margin-bottom: 7px;
+                          margin-top: 7px;
+                  }
+
+                  #list li #playbuttonlist img{
+                   height: 15px;
+                   /* border-radius: 50%; */
+                   box-shadow: 0 0 5px 1px white;
+           }
+           #list li #playbuttonlist img:hover{
+                     
+             box-shadow: 0 0 10px 2px white;
+                 }
+
+                    
+                    #playlist:target ~#list{
+
+                      display: flex;
+                    }
+                     
+
+                    #playlist:target{
+
+                      display: flex;
+                    }
