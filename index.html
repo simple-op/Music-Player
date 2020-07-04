@@ -336,7 +336,7 @@
                                    / 5:00</div>
                                  <div style="color: gainsboro; animation: change 2s ease-in-out infinite alternate ;">Playing</div>
                                  <div><img id="speaker" src="22-512.webp" alt="">
-                                 <input id="slider" width="20px" type="range" name="" id="" style="
+                                 <input onclick="volume()" id="slider" width="20px" type="range" name="" id="" style="
                                    position: fixed;
                                    margin-right: -10px  ;
                                    transform: rotateZ(270deg);
@@ -363,6 +363,13 @@ var progress=document.getElementById("progress");
 var pla=document.getElementById("play");
 var time1=document.getElementById("time1");
 var time2=document.getElementById("time2");
+var slider=document.getElementById("slider");
+
+function volume(){
+  console.log(slider.value/100);
+  myMusic.volume=(slider.value/100);
+  
+}
 
 
 function skip(){

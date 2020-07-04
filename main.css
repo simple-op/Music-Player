@@ -962,9 +962,10 @@ body{
                      #speaker:hover ~ #slider{
                       display: inline-block;
                       width: 100px;
-                      right:2.5%;
-                      height: 2px;
-                      bottom: 19vh;
+                      right:2.8%;
+                      
+                      height: 4px;
+                      bottom: 17vh;
                       position: relative;
                       box-shadow: 0 0 10px 1px white;
                       
@@ -978,10 +979,10 @@ body{
 
                       width: 100px;
                       /* right:3%; */
-                      right:2.5%;
+                      right:2.8%;
                       
-                      height: 2px;
-                      bottom: 19vh;
+                      height: 4px;
+                      bottom: 17vh;
                       position: relative;;
                       box-shadow: 0 0 10px 1px white;
                       
