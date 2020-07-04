@@ -314,7 +314,7 @@
          <!-- footer section is here -->
          <footer id="footer">
          
-           <div id="progressbar"><input id="progress" type="range"></div>
+           <div id="progressbar"><input onclick="skip()" id="progress" type="range"></div>
            <div id="player"  >   
              <!-- playing song info -->
                             <div id="playingSong">
@@ -365,6 +365,13 @@ var time1=document.getElementById("time1");
 var time2=document.getElementById("time2");
 
 
+function skip(){
+  myMusic.currentTime=progress.value*3;
+  console.log(progress.value);
+  console.log(myMusic.currentTime);
+  
+}
+
 var count=0;
 function play()
 {
@@ -394,7 +401,7 @@ setInterval(function(){
                  
               time2.innerText=Math.trunc(myMusic.currentTime%60);
               time1.innerText=t;
-}, 0);
+}, 1000);
 </script>
 
 </body>
