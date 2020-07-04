@@ -880,7 +880,7 @@ body{
                      {
                         outline: none;
                         border-radius: 50%;
-                        background-image: url(Assets/play.png);
+                        background-image: url(circle-cropped\ \(6\).png);
                         height: 33px;
                         background-size: cover;
                         width: 33px;
@@ -890,11 +890,35 @@ body{
                         animation: change 1s ease-in-out infinite alternate ;
                      }
                      /* on click  it will switch to pause button */
-                     #play:focus{
-
-                      background-image: url(circle-cropped\ \(6\).png);
+                     #playing{
+                      outline: none;
+                      border-radius: 50%;
+                      /* background-image: url(circle-cropped\ \(6\).png); */
+                      height: 33px;
+                      background-size: cover;
+                      width: 33px;
+                      background-color: transparent;
+                      border: none;
+                      box-shadow: 0 0 5px 1px white;
+                      animation: change 1s ease-in-out infinite alternate ;
+                      background-image: url(Assets/play.png );
 
                      }
+                     #pause{
+                      outline: none;
+                      border-radius: 50%;
+                      background-image: url(circle-cropped\ \(6\).png);
+                      height: 33px;
+                      background-size: cover;
+                      width: 33px;
+                      background-color: transparent;
+                      border: none;
+                      box-shadow: 0 0 5px 1px white;
+                      animation: change 1s ease-in-out infinite alternate ;
+                      /* background-image: url(circle-cropped\ \(6\).png); */
+
+                     }
+
 
                      #play:hover{
 
