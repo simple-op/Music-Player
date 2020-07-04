@@ -332,7 +332,8 @@
                             </div>
                             <!-- here is the timer -->
                             <div id="timer">
-                                 <div style="color: gainsboro; animation: change 2s ease-in-out infinite alternate ;">2:00 / 4:03</div>
+                                 <div style="color: gainsboro; animation: change 2s ease-in-out infinite alternate ;"><span id="time1"></span>:<span id="time2" ></span>
+                                   / 5:00</div>
                                  <div style="color: gainsboro; animation: change 2s ease-in-out infinite alternate ;">Playing</div>
                                  <div><img id="speaker" src="22-512.webp" alt="">
                                  <input id="slider" width="20px" type="range" name="" id="" style="
@@ -360,6 +361,10 @@
 var myMusic=document.getElementById("audio");
 var progress=document.getElementById("progress");
 var pla=document.getElementById("play");
+var time1=document.getElementById("time1");
+var time2=document.getElementById("time2");
+
+
 var count=0;
 function play()
 {
@@ -377,10 +382,19 @@ count++;
 
 }
 
+var t=00;
 
 setInterval(function(){
               progress.value=(myMusic.currentTime/300)*100;
-}, 0.1);
+              
+                t=Math.trunc(myMusic.currentTime/60);
+                
+              
+                   
+                 
+              time2.innerText=Math.trunc(myMusic.currentTime%60);
+              time1.innerText=t;
+}, 0);
 </script>
 
 </body>
