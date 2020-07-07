@@ -826,12 +826,14 @@ body{
                      #playingSong{
                          display: flex;
                          flex-direction: row;
-                         justify-content:space-evenly;
-                         padding: 2px;
+                         /* justify-content:space-evenly; */
+                         padding: 10px;
                          
                            width: 33%;
                            }
                         #playingSong div img{
+                          margin: 20px;
+                          margin-top: 0px;
                           border-radius: 50%;
                           height: 50px;
                           box-shadow: 0 0 5px 1px;
